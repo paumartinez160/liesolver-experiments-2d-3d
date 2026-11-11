@@ -1,0 +1,16 @@
+{
+  "train_ibc_mse": 6.659436298928202e-09,
+  "test_ibc_mse": 7.080135551237488e-09,
+  "domain_mse": 2.0209848513494744e-08,
+  "domain_l2_relative": 0.00039972519892892897,
+  "domain_max_error": 0.0003979538444750519,
+  "reference_type": "exact finite sum of rectangular wave eigenmodes",
+  "evaluation_points": 106641,
+  "acceptance_passed": true,
+  "training_seconds": 0.20024095199914882,
+  "solve_seconds": 0.20024095199914882,
+  "reload_max_delta": 0.0,
+  "pde_residual_max_interior": 0.0,
+  "bricks": 1,
+  "parameters": 4
+}

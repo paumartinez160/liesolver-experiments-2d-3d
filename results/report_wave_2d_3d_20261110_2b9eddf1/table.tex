@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{llcc}
+        \hline
+        Spatial dimension & Method & Interior relative $L^2$ error & Runtime (s) \\
+        \hline
+        2D & Classical finite differences & $6.121 \times 10^{-4}$ & 0.132 \\
+        2D & LieSolver & $3.997 \times 10^{-4}$ & 0.200 \\
+        3D & Classical finite differences & $1.404 \times 10^{-3}$ & 60.893 \\
+        3D & LieSolver & $8.234 \times 10^{-4}$ & 134.647 \\
+        \hline
+    \end{tabular}
+    \caption{Wave-equation experiments in two and three spatial dimensions,
+    each with time as an additional coordinate. Runtime measures model fitting
+    or time integration, excluding final evaluation and plotting.}
+    \label{tab:wave_2d_3d_comparison}
+\end{table}

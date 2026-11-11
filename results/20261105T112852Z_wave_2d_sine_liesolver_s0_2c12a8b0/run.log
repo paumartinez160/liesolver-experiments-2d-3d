@@ -1,0 +1,2 @@
+{'step': 0, 'action': 'add', 'seconds': 0.2655184079994797, 'bricks': 1, 'parameters': 4, 'train_mse': 0.008356389719825866, 'test_mse': 0.008599854064373995}
+{'step': 1, 'action': 'refine_all', 'seconds': 0.37563753799986443, 'bricks': 1, 'parameters': 4, 'train_mse': 6.65387573493622e-09, 'test_mse': 7.068310673153535e-09}

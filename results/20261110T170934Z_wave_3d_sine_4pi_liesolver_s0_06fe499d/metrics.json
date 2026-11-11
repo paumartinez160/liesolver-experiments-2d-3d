@@ -1,0 +1,18 @@
+{
+  "domain_mse": 4.533523521508086e-08,
+  "domain_l2_relative": 0.0008234053296909045,
+  "domain_max_error": 0.0008266763212657624,
+  "reference_type": "exact wave eigenmode sum",
+  "evaluation_points": 1221431,
+  "train_ibc_mse": 9.830824230792543e-09,
+  "test_ibc_mse": 1.3652622861809619e-08,
+  "acceptance_passed": true,
+  "training_seconds": 134.6468502710013,
+  "solve_seconds": 134.6468502710013,
+  "reload_max_delta": 0.0,
+  "pde_residual_max_interior": 1.1368683772161603e-13,
+  "fit_mse_target_met": true,
+  "fit_termination": "mse_target",
+  "bricks": 19,
+  "parameters": 95
+}

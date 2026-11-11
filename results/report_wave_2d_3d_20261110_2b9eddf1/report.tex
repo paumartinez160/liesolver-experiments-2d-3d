@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[margin=2cm]{geometry}
+\begin{document}
+\section*{Wave equation: 2D and 3D experiments}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{llcc}
+        \hline
+        Spatial dimension & Method & Interior relative $L^2$ error & Runtime (s) \\
+        \hline
+        2D & Classical finite differences & $6.121 \times 10^{-4}$ & 0.132 \\
+        2D & LieSolver & $3.997 \times 10^{-4}$ & 0.200 \\
+        3D & Classical finite differences & $1.404 \times 10^{-3}$ & 60.893 \\
+        3D & LieSolver & $8.234 \times 10^{-4}$ & 134.647 \\
+        \hline
+    \end{tabular}
+    \caption{Wave-equation experiments in two and three spatial dimensions,
+    each with time as an additional coordinate. Runtime measures model fitting
+    or time integration, excluding final evaluation and plotting.}
+    \label{tab:wave_2d_3d_comparison}
+\end{table}
+
+We solved the unit-speed wave equation
+\[
+    u_{tt}=\sum_{j=1}^{d}u_{x_jx_j},
+    \qquad (\mathbf{x},t)\in[0,1]^d\times[0,1],
+    \qquad d\in\{2,3\},
+\]
+with zero Dirichlet conditions on every spatial boundary, zero initial
+velocity, and initial displacement
+$u(\mathbf{x},0)=\prod_{j=1}^{d}\sin(4\pi x_j)$.
+The exact reference solution is
+\[
+    u_{\mathrm{exact}}(\mathbf{x},t)
+    =\left[\prod_{j=1}^{d}\sin(4\pi x_j)\right]
+      \cos(4\pi\sqrt{d}\,t).
+\]
+The classical solver used second-order centered finite differences on
+$201^2$ nodes with 354 time steps in 2D, and $201^3$ nodes with 434 time
+steps in 3D. Both grids satisfied the respective multidimensional CFL
+condition. The 3D implementation used rolling time levels and saved sampled
+fields; sampling time was recorded separately from integration time.
+
+LieSolver fitted the initial displacement, initial velocity and boundary
+conditions using 1000 Halton points per constraint surface: 6000 points in
+2D and 8000 in 3D, with seed 0. It used an initial/boundary MSE stopping
+target of $10^{-8}$ and a maximum of 20 blocks. The fitted models contained
+one block in 2D and 19 blocks in 3D. The reference solution was not used
+for fitting or time integration.
+
+Within each dimension, both solvers were evaluated on the same grid:
+$51^2\times41$ space--time points in 2D and $31^3\times41$ in 3D.
+Classical predictions were interpolated in space and time. The reported
+error is $\|\hat{u}-u_{\mathrm{exact}}\|_2/\|u_{\mathrm{exact}}\|_2$,
+using strictly interior space--time points. The 3D classical error exceeds
+the demonstration threshold of $10^{-3}$. These are single-run results
+for modes contained in LieSolver's solution family. The different evaluation
+grids and fitted block counts preclude interpreting the runtime increase
+as a controlled scalability measurement. The 2D values are retained from
+the earlier experiment; the final 3D runs were performed sequentially.
+
+\end{document}

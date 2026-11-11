@@ -1,0 +1,3 @@
+label,method,folder,relative_l2,ibc_mse,solve_seconds,total_seconds,acceptance_passed
+liesolver_s0_1,liesolver,results/20261110T170934Z_wave_3d_sine_4pi_liesolver_s0_06fe499d,0.0008234053296909045,1.3652622861809619e-08,134.6468502710013,138.43365923000238,True
+classical_s0_2,classical,results/20261110T171153Z_wave_3d_sine_4pi_classical_s0_f53a6918,0.0014043594905210962,2.3975515719865423e-08,60.893188077996456,65.32605989700096,False

@@ -1,0 +1,12 @@
+{
+  "scheme": "centered-wave-2d",
+  "nx": 101,
+  "ny": 101,
+  "time_steps": 177,
+  "dx": 0.01,
+  "dy": 0.01,
+  "dt": 0.005649717514124294,
+  "cfl_2d": 0.7989907132051385,
+  "stored_values": 1815778,
+  "interpolation": "trilinear"
+}

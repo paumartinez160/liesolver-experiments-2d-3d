@@ -1,0 +1,17 @@
+{
+  "scheme": "centered-wave-3d",
+  "nx": 201,
+  "ny": 201,
+  "nz": 201,
+  "time_steps": 434,
+  "dx": 0.005,
+  "dy": 0.005,
+  "dz": 0.005,
+  "dt": 0.002304147465437788,
+  "cfl_3d": 0.7981800956538605,
+  "storage": "rolling levels plus sampled evaluation fields",
+  "interpolation": "trilinear in space, linear between native time levels; saved-grid interpolation on reload",
+  "sampling_seconds": 0.37569421001171577,
+  "saved_field_values": 1221431,
+  "spatial_nodes": 8120601
+}

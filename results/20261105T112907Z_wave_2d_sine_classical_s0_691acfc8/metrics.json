@@ -1,0 +1,23 @@
+{
+  "train_ibc_mse": 1.2387390075683245e-09,
+  "test_ibc_mse": 2.079282215737299e-09,
+  "domain_mse": 5.336085246470781e-10,
+  "domain_l2_relative": 6.22740326542618e-05,
+  "domain_max_error": 8.410511525469566e-05,
+  "reference_type": "exact finite sum of rectangular wave eigenmodes",
+  "evaluation_points": 106641,
+  "acceptance_passed": true,
+  "training_seconds": 0.02301586600151495,
+  "solve_seconds": 0.02301586600151495,
+  "scheme": "centered-wave-2d",
+  "nx": 101,
+  "ny": 101,
+  "time_steps": 177,
+  "dx": 0.01,
+  "dy": 0.01,
+  "dt": 0.005649717514124294,
+  "cfl_2d": 0.7989907132051385,
+  "stored_values": 1815778,
+  "interpolation": "trilinear",
+  "reload_max_delta": 0.0
+}

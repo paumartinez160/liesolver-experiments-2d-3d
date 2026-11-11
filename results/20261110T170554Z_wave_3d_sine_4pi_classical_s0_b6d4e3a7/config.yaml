@@ -1,0 +1,46 @@
+pde: wave_3d
+experiment_name: wave_3d_sine_4pi
+seed: 0
+problem:
+  modes:
+  - mx: 4
+    my: 4
+    amplitude: 1.0
+    mz: 4
+data:
+  range_dim:
+    x:
+    - 0
+    - 1
+    y:
+    - 0
+    - 1
+    z:
+    - 0
+    - 1
+    t:
+    - 0
+    - 1
+  num_face_points: 1000
+bricks:
+- T4(0.5,20) T3(-3.141592653589793,3.141592653589793) T2(-3.141592653589793,3.141592653589793)
+  T1(-3.141592653589793,3.141592653589793) sin(x)*sin(y)*sin(z)*cos(sqrt(3)*t)
+fit:
+  mse_tol: 1.0e-08
+  max_bricks: 20
+  pool_size: 1000
+  global_every: 1
+  nfev_global: 40
+  batch_size: 9000
+  nfev_batch: 4
+classical:
+  nx: 201
+  cfl: 0.8
+  ny: 201
+  nz: 201
+evaluation:
+  grid:
+  - 31
+  - 31
+  - 31
+  - 41

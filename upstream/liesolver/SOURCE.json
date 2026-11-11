@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/oduwancheekee/liesolver",
+  "commit": "178c4142598ea9cd6398a6180773becea48a17a2",
+  "note": "Unmodified Python library and original packaging/license files. Upstream examples, webapp, notebooks and Git history omitted.",
+  "sha256": {
+    "pyproject.toml": "ddd552448385a3a6436dff07abb556774ed697f43b5e0934103524c027b8d10e",
+    "UPSTREAM_COMMIT": "05319849814546d792650c4189792d8b9c6d0311f61f599864512f401ac3c6b1",
+    "README.md": "5af93cf33b218e91b7d76da5fbebac8c79b6b2fd4c493ae4dc4d6c5c4527034d",
+    "LICENSE": "51cedb2ae0278e8c65300bba62129eabf603edc5ad50e917de2551e12439ea00",
+    "liesolver/trainer.py": "2169263f75e8f067662e77499deba5ccdb2b26d9e5f395dee1b39d0f39168c05",
+    "liesolver/model.py": "b6b0887ad5faf4bd79060ca797e04b166e56c0ce095513b41a12547147c6135b",
+    "liesolver/constraints.py": "90f5ecc7f9c2328daeb6c5e4e19fad526f4538fd828f90076cc6bcea93dc20e3",
+    "liesolver/dataloader.py": "576d7d11920d0cfd3816297e7a306925450e5ed10db19f53919fff8e2aa7cedf",
+    "liesolver/plotting.py": "aa2abde5587bf0372d31702679f03ff908fc5e2f9c42ecb53ea39782a3cc00ae",
+    "liesolver/metrics.py": "7df334b0958cad8aec0ffe0ca48188fd4f4d17f0a2f48b653e9a71a6827507af",
+    "liesolver/__init__.py": "22ce95e8067b0cf9d9a2134e14ea1b44fe561a87ee7e81360914b858a4f499f1",
+    "liesolver/utils/loader.py": "8f73322500b58a4a5a236ca7ab48eb102c285740a725ad646f38976cb08c64cc",
+    "liesolver/utils/logging.py": "74f42e31f4f7738b82190b42d5eeebc983d0f9d00ba5e8ca362ca2df0f5ea27c",
+    "liesolver/utils/io.py": "cbc249b9aba08ba653d5f765ab59ed787aa3218515cb30e2e0adef27cbf8f6ee",
+    "liesolver/utils/__init__.py": "58dd04faf89481f32132d6f110ce95318756299f966cb5c4428dd35390ae4e23",
+    "liesolver/pdes/heat_1d.py": "66c92a2d8ca24a51e967effb295e3ec925cc9079fd05c5c1f49fcb6ae4a7f558",
+    "liesolver/pdes/wave_equation_2d.py": "01d24fc751b92c8f8f0aa618bd54b290036e8a5aebf657fe60a11a941daed6c4",
+    "liesolver/pdes/wave_1d.py": "998c950693d14c08229142b3a33c45e5b717a7d4bf4c907536202f1a721477ba",
+    "liesolver/pdes/template.py": "ff0df500bddfebc7f798dad483c68a98e847b5acf1581c08b64a3b79fc430809",
+    "liesolver/pdes/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "liesolver/pdes/wave_2d.py": "141e1082cc2d605f8da5d29e61f234a6bc0bf656181c921db4b67dba2d0b49c9"
+  }
+}
